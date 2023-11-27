@@ -6,7 +6,6 @@ const NoteSecOne = () => {
 
   
 
-
   return (
     <div>
       <div className="note-section-one">

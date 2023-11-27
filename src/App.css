@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap");
-
+* {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -29,8 +31,9 @@ body {
 .edolon-menu-arrow {
   width: 1.5rem;
   position: relative;
-  padding-top: 5px;
-  right: 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  right: 1px;
 }
 
 .the-divs {
@@ -130,7 +133,7 @@ body {
 
 .first-flex p:first-child {
   font-size: 30px;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -160,12 +163,12 @@ body {
 
 .second-flex p:first-child {
   font-size: 30px;
-  padding-top: 40px;
+  padding-top: 1px;
 }
 
 .second-flex p:first-child {
   font-size: 30px;
-  padding-top: 40px;
+  padding-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .second-flex p:nth-child(2) {
@@ -354,6 +357,19 @@ ul li {
 /* styles for android devices */
 
 @media screen and (max-width: 550px) {
+  .header-image {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    z-index: 2;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+  }
   .note-section-one {
     background-color: black;
     color: white;
@@ -379,7 +395,7 @@ ul li {
     color: white;
     padding-left: 20px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     padding-top: 10px;
   }
   .second-flex {
@@ -387,8 +403,9 @@ ul li {
     color: white;
     padding-left: 20px;
     padding-right: 10px;
-    padding-bottom: 100px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 0;
+    overflow-y: hidden;
   }
   .intro-estate {
     color: white;
