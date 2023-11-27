@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+/* Styles for Heading.js component */
+
+.header-image {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 2;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+}
+
+.edolon-logo {
+  width: 3rem;
+  
+}
+
+.edolon-menu-arrow {
+  width: 1.5rem;
+  padding-right: 20px;
+}
+
+.the-divs {
+  display: none;
+}
+
+.header-image ul {
+  display: none;
+}
+
+/* Show the ul when the header is visible */
+.header-image.visible ul {
+  display: flex;
+}
+
+
+.bg-text {
+  margin-top: 200px;
+  text-align: center;
+  color: white;
+  font-size: 7vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  mix-blend-mode: multiply;
+  background-color: rgb(0, 0, 0);
+}
+
+.bg-text p h1 {
+  font-size: 17vw;
+}
+
+/* the styles below is for BgVideo.js component */
+
+.video-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* the styles below is for noteSecOne.js component */
+
+.note-section-one {
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  background-color: blue;
+}
+
+.note-section-one p:first-child {
+  font-size: 29px;
+}
+
+.learn-more-btn {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  max-width: 130px;
+}
+
+/* styles for two-sec-flex */
+
+.two-sec-flex {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 40px;
+
+  width: auto;
+}
+
+.first-flex {
+  background-image: linear-gradient(360deg, purple, blue);
+  width: 100%;
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 160px;
+  padding-top: 50px;
+}
+
+.first-flex p:first-child {
+  font-size: 30px;
+  padding-top: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.first-flex p:nth-child(2) {
+  font-size: 120px;
+  margin-top: -1px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.first-flex p:nth-child(3) {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: -120px;
+  max-width: 230px;
+  opacity: 0.7;
+}
+
+.second-flex {
+  width: 100%;
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 170px;
+  padding-top: 50px;
+}
+
+.second-flex p:first-child {
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.second-flex p:first-child {
+  font-size: 30px;
+  padding-top: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second-flex p:nth-child(2) {
+  font-size: 120px;
+  margin-top: -1px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.second-flex p:nth-child(3) {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: -120px;
+  max-width: 230px;
+  opacity: 0.7;
+}
+
+/* styles for noteSecTwo.js */
+
+.intro-estate {
+  color: white;
+  padding: 20px 80px 20px 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: linear-gradient(40deg, blue, purple);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.intro-estate p:first-child {
+  font-weight: 800;
+  font-size: 56px;
+}
+
+.intro-estate p:nth-child(2) {
+  border: 1px solid white;
+  max-width: 140px;
+  padding: 5px 3px 10px 10px;
+}
+
+.intro-estate p:nth-child(2):hover {
+  border: 1px solid rgb(0, 0, 0);
+  max-width: 140px;
+  padding: 20px 40px 20px 40px;
+  transition: 1s;
+}
+
+/* styles for address section */
+
+.footer {
+  flex-wrap: wrap;
+  background-color: blanchedalmond;
+  padding-bottom: 20px;
+}
+
+.address-sec {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px 20px 60px;
+}
+
+ ul li {
+  list-style-type: none;
+  font-size: 13px;
+  padding-bottom: 15px;
+  opacity: 0.7;
+}
+
+.foot-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 80px 20px 60px;
+}
+
+.foot-footer p:first-child {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.foot-footer ul {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 998px) {
+  .two-sec-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .first-flex p:nth-child(2) {
+    font-size: 15vw;
+    margin-top: -1px;
+    padding-bottom: 6rem;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .second-flex p:nth-child(2) {
+    font-size: 15vw;
+    margin-top: -1px;
+    padding-bottom: 6rem;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+  }
+
+.intro-estate p:first-child {
+  font-weight: 800;
+  font-size: 9vw;
+  width: 200px;
+}
+
+}
+
+
+
+@media screen and (min-width: 1023px) {
+  .header-image {
+    display: flex;
+    gap: 4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+  }
+
+  .edolon-logo {
+    width: 6rem;
+  }
+
+  .edolon-menu-arrow {
+    display: none;
+  }
+
+  .the-divs {
+    display: block;
+  }
+
+  .header-image ul {
+    display: block;
+    cursor: pointer;
+    padding-right: 30px;
+  }
+
+  .header-image ul li {
+    list-style: none;
+  }
+
+  .first-ul {
+    font-weight: 800;
+    font-size: 15px;
+    margin-left: 130px;
+  }
+}
+
+/* Custom styles for the square checkbox */
+.square-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.square-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.square-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.square-checkbox:hover {
+  background-color: yellow;
+}
+
+.swipe-container {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.swipe-text {
+  display: inline-block;
+  animation: swipeAnimation 10s linear infinite;
+}
+
+@keyframes swipeAnimation {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  75% {
+      transform: translateX(0);
+      opacity: 0;
+  }
+}
