@@ -24,12 +24,13 @@ body {
 
 .edolon-logo {
   width: 3rem;
-  
 }
 
 .edolon-menu-arrow {
   width: 1.5rem;
-  padding-right: 20px;
+  position: relative;
+  padding-top: 5px;
+  right: 30px;
 }
 
 .the-divs {
@@ -44,7 +45,6 @@ body {
 .header-image.visible ul {
   display: flex;
 }
-
 
 .bg-text {
   margin-top: 200px;
@@ -188,7 +188,7 @@ body {
 .intro-estate {
   color: white;
   padding: 20px 80px 20px 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-image: linear-gradient(40deg, blue, purple);
   margin-left: 5rem;
   margin-right: 5rem;
@@ -198,7 +198,7 @@ body {
 
 .intro-estate p:first-child {
   font-weight: 800;
-  font-size: 56px;
+  font-size: 4vw;
 }
 
 .intro-estate p:nth-child(2) {
@@ -229,7 +229,7 @@ body {
   padding: 20px 80px 20px 60px;
 }
 
- ul li {
+ul li {
   list-style-type: none;
   font-size: 13px;
   padding-bottom: 15px;
@@ -254,7 +254,6 @@ body {
   gap: 10px;
 }
 
-
 @media screen and (max-width: 998px) {
   .two-sec-flex {
     display: flex;
@@ -277,15 +276,11 @@ body {
     font-family: "DM Sans", sans-serif;
   }
 
-.intro-estate p:first-child {
-  font-weight: 800;
-  font-size: 9vw;
-  width: 200px;
+  .intro-estate p:first-child {
+    font-weight: 800;
+    font-size: 5vw;
+  }
 }
-
-}
-
-
 
 @media screen and (min-width: 1023px) {
   .header-image {
@@ -293,7 +288,6 @@ body {
     gap: 4rem;
     padding-left: 10px;
     padding-right: 10px;
- 
   }
 
   .edolon-logo {
@@ -357,34 +351,53 @@ body {
   background-color: yellow;
 }
 
-.swipe-container {
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-color: lightgray;
-  padding: 10px;
-  box-sizing: border-box;
-}
+/* styles for android devices */
 
-.swipe-text {
-  display: inline-block;
-  animation: swipeAnimation 10s linear infinite;
-}
-
-@keyframes swipeAnimation {
-  0%, 100% {
-      transform: translateX(0);
+@media screen and (max-width: 550px) {
+  .note-section-one {
+    background-color: black;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    background-color: blue;
   }
-  25% {
-      transform: translateX(-100%);
+  .two-sec-flex {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin: 10px;
+    width: auto;
   }
-  50% {
-      transform: translateX(-100%);
-      opacity: 0;
+  .first-flex {
+    background-image: linear-gradient(360deg, purple, blue);
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    padding-top: 10px;
   }
-  75% {
-      transform: translateX(0);
-      opacity: 0;
+  .second-flex {
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+  }
+  .intro-estate {
+    color: white;
+    padding: 10px 0px 20px 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-image: linear-gradient(40deg, blue, purple);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 20px;
+    /* max-width: 900px; */
   }
 }
