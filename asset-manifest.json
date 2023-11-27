@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/edolon-homepage/static/css/main.95e6430d.css",
+    "main.css": "/edolon-homepage/static/css/main.efd00e01.css",
     "main.js": "/edolon-homepage/static/js/main.3e620e8d.js",
     "index.html": "/edolon-homepage/index.html",
-    "main.95e6430d.css.map": "/edolon-homepage/static/css/main.95e6430d.css.map",
+    "main.efd00e01.css.map": "/edolon-homepage/static/css/main.efd00e01.css.map",
     "main.3e620e8d.js.map": "/edolon-homepage/static/js/main.3e620e8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.95e6430d.css",
+    "static/css/main.efd00e01.css",
     "static/js/main.3e620e8d.js"
   ]
 }
